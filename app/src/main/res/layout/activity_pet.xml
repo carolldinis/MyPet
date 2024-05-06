@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".petActivity">
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playButton"
+        android:layout_centerHorizontal="true"
+        android:background="#FDC70B"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedButton"
+        android:layout_centerHorizontal="true"
+        android:background="#FDC70B"
+        android:text="Play"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/petImage"
+        android:layout_centerHorizontal="true"
+        android:background="#FDC70B"
+        android:text="Feed"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <TextView
+        android:id="@+id/hungerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hunger: 50%"
+        android:layout_below="@+id/cleanButton"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/cleanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Clean: 50%"
+        android:layout_below="@+id/hungerTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="61dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <TextView
+        android:id="@+id/happinessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Happy: 50%"
+        android:layout_below="@+id/cleanTextView"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="470dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"/>
+
+
+</RelativeLayout>
